@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contrato de Venda - @miojx0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              script: ['"Great Vibes"', 'cursive'],
+              mono: ['"Roboto Mono"', 'monospace'],
+            },
+            colors: {
+              paper: '#fdfbf7',
+              ink: '#2d2d2d',
+              gold: '#d4af37',
+              stamp: '#ba1e1e'
+            },
+            animation: {
+                'bounce-slow': 'bounce 3s infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .mask-image-grunge {
+            -webkit-mask-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+            mask-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        }
+        .signature-appear {
+            opacity: 0;
+            transform: translateY(10px) rotate(-2deg);
+            transition: all 1s ease-out;
+        }
+        .signature-appear.visible {
+            opacity: 1;
+            transform: translateY(0) rotate(-2deg);
+        }
+        .stamp-appear {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.5) rotate(-15deg);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .stamp-appear.visible {
+            opacity: 0.2;
+            transform: translate(-50%, -50%) scale(1) rotate(-15deg);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0"
+  }
+}
+</script>
+</head>
+<body class="bg-stone-900 text-stone-800 antialiased overflow-x-hidden">
+    
+    <div class="min-h-screen bg-[url('https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-fixed bg-no-repeat relative">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-stone-900/80 backdrop-blur-sm z-0"></div>
+
+        <div class="relative z-10 container mx-auto px-4 py-12 flex flex-col items-center">
+            
+            <!-- Header Branding -->
+            <div class="mb-8 text-center text-stone-300">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <!-- Shield Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span class="font-display tracking-widest text-sm uppercase">Secure Asset Transfer Protocol</span>
+                </div>
+                <p class="text-xs font-mono opacity-50">ID: TX-9928-MX-RU-1B</p>
+            </div>
+
+            <!-- Contract Document -->
+            <div id="contract-card" class="w-full max-w-3xl bg-paper shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform transition-transform duration-700 ease-out hover:scale-[1.005] relative overflow-hidden">
+                
+                <!-- Texture -->
+                <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]"></div>
+                
+                <!-- Border -->
+                <div class="absolute inset-4 border-2 border-stone-800/20 pointer-events-none">
+                    <div class="absolute inset-1 border border-stone-800/10"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="relative p-12 md:p-16 flex flex-col h-full min-h-[900px]">
+                    
+                    <header class="text-center mb-12 border-b-2 border-stone-800/10 pb-8">
+                        <div class="w-24 h-24 mx-auto mb-4 opacity-80">
+                            <svg viewBox="0 0 100 100" class="w-full h-full text-stone-800 fill-current">
+                                <path d="M50 20 L20 80 L80 80 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                                <circle cx="50" cy="55" r="15" fill="none" stroke="currentColor" stroke-width="1" />
+                                <path d="M35 55 L65 55 M50 40 L50 70" stroke="currentColor" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h1 class="font-display text-4xl md:text-5xl font-bold text-ink tracking-tight mb-2 uppercase">
+                            Escritura de Venda
+                        </h1>
+                        <h2 class="font-serif italic text-stone-500 text-lg">
+                            Transferência Perpétua de Propriedade
+                        </h2>
+                    </header>
+
+                    <main class="flex-grow font-serif text-ink leading-relaxed space-y-6 text-justify">
+                        <p class="indent-8">
+                            <span class="font-bold text-xl drop-cap">P</span>elo presente instrumento particular, nesta data de <span class="font-bold border-b border-stone-300 px-2" id="current-date"></span>, certifica-se a transação irrevogável e solene entre as partes abaixo qualificadas.
+                        </p>
+
+                        <div class="bg-stone-100/50 p-6 border border-stone-200 my-8">
+                            <div class="grid grid-cols-[100px_1fr] gap-4 items-baseline mb-2">
+                                <span class="font-display font-bold text-xs uppercase text-stone-500 tracking-wider">Objeto:</span>
+                                <span class="font-bold text-xl text-indigo-900">@miojx0</span>
+                            </div>
+                            <div class="grid grid-cols-[100px_1fr] gap-4 items-baseline mb-2">
+                                <span class="font-display font-bold text-xs uppercase text-stone-500 tracking-wider">Descrição:</span>
+                                <span class="italic text-stone-700">Entidade digital, classe femboy, incluindo todos os direitos de imagem, personalidade e memes associados.</span>
+                            </div>
+                            <div class="grid grid-cols-[100px_1fr] gap-4 items-baseline mb-2">
+                                <span class="font-display font-bold text-xs uppercase text-stone-500 tracking-wider">Comprador:</span>
+                                <span class="font-bold text-xl text-emerald-900">@russianxxyz</span>
+                            </div>
+                            <div class="grid grid-cols-[100px_1fr] gap-4 items-baseline">
+                                <span class="font-display font-bold text-xs uppercase text-stone-500 tracking-wider">Valor:</span>
+                                <span class="font-mono text-xl font-bold text-red-800">1.000.000.000,00 (1B)</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-display font-bold text-center text-lg mt-8 mb-4 uppercase tracking-widest decoration-double underline decoration-stone-300">
+                            Termos e Condições
+                        </h3>
+
+                        <ol class="list-decimal list-outside ml-6 space-y-4 text-sm text-stone-700">
+                            <li>
+                                <strong>Da Transferência Total:</strong> O vendedor cede, transfere e transmite ao <span class="uppercase font-bold">Comprador</span> toda a posse, domínio, direito e ação que tinha sobre o <span class="uppercase font-bold">Objeto</span>.
+                            </li>
+                            <li>
+                                <strong>Da Irrevogabilidade:</strong> A presente venda é feita em caráter definitivo, irretratável e irrevogável, não cabendo arrependimento por nenhuma das partes.
+                            </li>
+                            <li>
+                                <strong>Do Pagamento:</strong> O valor de <strong>1 Bilhão</strong> foi liquidado integralmente nesta data, servindo este instrumento como a mais rasa e total quitação.
+                            </li>
+                            <li>
+                                <strong>Da Natureza do Objeto:</strong> O <span class="uppercase font-bold">Comprador</span> declara estar ciente das peculiaridades do <span class="uppercase font-bold">Objeto</span> (@miojx0), aceitando-o no estado de conservação (físico e mental) em que se encontra.
+                            </li>
+                        </ol>
+                    </main>
+
+                    <footer class="mt-16 pt-8 relative">
+                        <!-- Sold Stamp -->
+                        <div id="sold-stamp" class="stamp-appear absolute top-0 left-1/2 pointer-events-none">
+                            <div class="border-8 border-stamp text-stamp px-8 py-2 font-display font-bold text-6xl uppercase tracking-widest mix-blend-multiply mask-image-grunge">
+                                VENDIDO
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-12 mt-12">
+                            <!-- Signature 1 -->
+                            <div class="flex flex-col items-center">
+                                <div class="h-16 flex items-end justify-center w-full relative">
+                                    <span class="font-script text-3xl text-stone-300 absolute bottom-2 opacity-50 select-none">Assinatura Autorizada</span>
+                                </div>
+                                <div class="w-full h-px bg-stone-800 mb-2 relative">
+                                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 text-[10px] text-stone-400 bg-paper px-1">x</div>
+                                </div>
+                                <span class="font-display font-bold text-xs uppercase tracking-widest text-stone-600 mb-1">O Vendedor</span>
+                                <span class="font-mono text-[10px] text-stone-400 date-placeholder">Data: </span>
+                            </div>
+
+                            <!-- Signature 2 (Interactive) -->
+                            <div class="flex flex-col items-center">
+                                <div class="h-16 flex items-end justify-center w-full relative">
+                                    <span id="buyer-placeholder" class="font-script text-3xl text-stone-300 absolute bottom-2 opacity-50 select-none transition-opacity duration-300">Assinar aqui</span>
+                                    <span id="buyer-signature" class="signature-appear font-script text-4xl text-emerald-800 absolute bottom-2">@russianxxyz</span>
+                                </div>
+                                <div class="w-full h-px bg-stone-800 mb-2 relative">
+                                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 text-[10px] text-stone-400 bg-paper px-1">x</div>
+                                </div>
+                                <span class="font-display font-bold text-xs uppercase tracking-widest text-stone-600 mb-1">O Comprador</span>
+                                <span class="font-mono text-[10px] text-stone-400 date-placeholder">Data: </span>
+                            </div>
+                        </div>
+
+                        <!-- Seal Button -->
+                        <div class="flex justify-center mt-12 items-end">
+                            <div id="seal-trigger" class="relative group cursor-pointer transform transition-transform duration-200 active:scale-95">
+                                <!-- Wax Seal SVG -->
+                                <div class="relative w-32 h-32 flex items-center justify-center">
+                                    <div class="absolute inset-0 bg-red-800 rounded-full shadow-[inset_0_-4px_6px_rgba(0,0,0,0.3),0_4px_6px_rgba(0,0,0,0.4)] flex items-center justify-center transform scale-100 group-hover:scale-105 transition-transform duration-300">
+                                        <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full text-red-900 fill-current opacity-80 drop-shadow-md">
+                                            <circle cx="50" cy="50" r="45" />
+                                            <path d="M50,5 C25,5 5,25 5,50 C5,75 25,95 50,95 C75,95 95,75 95,50 C95,25 75,5 50,5 Z M50,0 C80,0 100,20 100,50 C100,80 80,100 50,100 C20,100 0,80 0,50 C0,20 20,0 50,0 Z" fill="rgba(100, 0, 0, 0.3)" />
+                                        </svg>
+                                        <div class="w-24 h-24 rounded-full border-2 border-red-900/50 flex items-center justify-center bg-red-800 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)]">
+                                            <div class="text-red-950 font-display font-bold text-3xl opacity-60 tracking-tighter text-center leading-none transform -rotate-12">
+                                                OFFICIAL<br/>SEAL
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-4 right-8 w-8 h-4 bg-white opacity-20 rounded-full blur-sm transform -rotate-45"></div>
+                                </div>
+
+                                <!-- Text Labels -->
+                                <div id="click-hint" class="absolute -bottom-8 w-full text-center text-xs text-stone-400 font-mono animate-bounce-slow">
+                                    Clique para autenticar
+                                </div>
+                                <div id="authenticated-label" class="absolute -right-24 bottom-4 rotate-[-10deg] opacity-0 transition-opacity duration-500">
+                                    <span class="font-script text-3xl text-indigo-800">Autenticado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
+                <!-- Barcode -->
+                <div class="absolute bottom-4 left-0 right-0 text-center opacity-30">
+                    <div class="font-mono text-[10px] tracking-[0.5em]">||| || ||| || |||| ||| || |||||| ||</div>
+                </div>
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="mt-12 flex gap-6 text-stone-400 text-sm font-mono">
+                <div class="flex items-center gap-2 hover:text-white cursor-pointer transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>Encriptado SHA-256</span>
+                </div>
+                <div class="flex items-center gap-2 hover:text-white cursor-pointer transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <span>Verificação Pública</span>
+                </div>
+            </div>
+
+            <div class="mt-8 text-stone-600 text-xs text-center max-w-md">
+                Este é um documento satírico gerado para fins de entretenimento. 
+                Todas as partes mencionadas são fictícias ou representações de personas online.
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Set Dates
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date().toLocaleDateString('pt-BR', dateOptions);
+        
+        document.getElementById('current-date').textContent = today;
+        document.querySelectorAll('.date-placeholder').forEach(el => {
+            el.textContent += today;
+        });
+
+        // Interaction Logic
+        const sealTrigger = document.getElementById('seal-trigger');
+        const clickHint = document.getElementById('click-hint');
+        const authenticatedLabel = document.getElementById('authenticated-label');
+        const buyerPlaceholder = document.getElementById('buyer-placeholder');
+        const buyerSignature = document.getElementById('buyer-signature');
+        const soldStamp = document.getElementById('sold-stamp');
+
+        let isSigned = false;
+
+        sealTrigger.addEventListener('click', () => {
+            if (isSigned) return;
+            isSigned = true;
+
+            // 1. Hide hint
+            clickHint.classList.add('hidden');
+
+            // 2. Show "Authenticated" text next to seal
+            authenticatedLabel.classList.remove('opacity-0');
+
+            // 3. Animate Signature
+            buyerPlaceholder.classList.add('opacity-0');
+            setTimeout(() => {
+                buyerSignature.classList.add('visible');
+            }, 200);
+
+            // 4. Slam the SOLD stamp
+            setTimeout(() => {
+                soldStamp.classList.add('visible');
+            }, 800);
+        });
+    </script>
+</body>
+</html>
